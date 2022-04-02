@@ -1,0 +1,157 @@
+.header {
+    padding: 43px 0 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left:0;
+    width: 100%;
+
+    @include breakpoint('xs') {
+        padding: 20px 0;
+    }
+
+    &.active {
+        .nav {
+            transform: translateX(0);
+            opacity: 1;
+            visibility: visible;
+        }
+    
+        .burger-btn {
+            span {
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+    
+            &::before {
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(45deg);
+            }
+    
+            &::after {
+                bottom: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%) rotate(-45deg);
+            }
+        }
+    }
+
+    .logo-holder {
+        max-width: 110px;
+        width: 100%;
+
+        @include breakpoint("md") {
+            z-index: 11;
+        }
+
+        @include breakpoint('xs') {
+            max-width:90px;
+        }
+    }
+
+    .nav {
+        padding-right: 265px;
+
+        @include breakpoint('lg') {
+            padding-right: 130px;
+        }
+
+        @include breakpoint('md') {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            padding: 10px 0;
+            z-index: 10;
+            background-color: $bg-color;
+            transition: all ease-in-out 0.3s;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .header-nav {
+
+            @include breakpoint('md') {
+                flex-direction: column;
+            }
+        }
+
+        .header-nav-item {
+            padding: 0 18px;
+
+            @include breakpoint ('md') {
+                padding: 0;
+                width: 100%;
+            }
+        
+            .header-nav-link {
+                font-size: 18px;
+
+                @include breakpoint('md') {
+                    display: block;
+                    padding: 40px 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+
+    .burger-btn {
+        display: none;
+
+        @include breakpoint("md") {
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: 20px;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 25px;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            z-index: 10;
+
+            &::before {
+                content: "";
+                width: 30px;
+                height: 2px;
+                position: absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $brown;
+                transition: all ease-in-out 0.3s;
+            }
+
+            &:after {
+                content: "";
+                width: 30px;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                background-color: $brown;
+                transition: all ease-in-out 0.3s;
+            }
+
+            span {
+                width: 30px;
+                height: 2px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: $brown;
+                transition: all ease-in-out 0.3s;
+            }
+        }
+
+        @include breakpoint('xs') {
+            top:35px;
+        }
+    }
+
+}
