@@ -1,7 +1,15 @@
 .hero {
     padding-top: 104px;
 
+    @include breakpoint('md') {
+        padding-top: 60px;
+    }
+
     .title-holder {
         margin-bottom: 136px;
+
+        @include breakpoint('md') {
+            margin-bottom: 80px;
+        }
     }
 }

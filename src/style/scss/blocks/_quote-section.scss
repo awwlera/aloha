@@ -1,8 +1,18 @@
 .quote-section {
-    padding: 84px 159px 110px 60px;
-    background-color: $brown;
-    color: $white;
-    border-radius: 16px;
+    
+    .quote-fig {
+        padding: 84px 159px 110px 60px;
+        background-color: $brown;
+        color: $white;
+        border-radius: 16px;
+
+        @include breakpoint('lg') {
+            padding: 80px 80px 80px 50px;
+        }
+        @include breakpoint('md') {
+            padding: 40px;
+        }
+    }
 
     .quote {
         margin-bottom: 45px;
