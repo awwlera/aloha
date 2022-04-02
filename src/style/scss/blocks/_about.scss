@@ -1,0 +1,38 @@
+.about {
+    padding: 84px 0 0;
+
+    .title-holder {
+        margin-bottom: 90px;
+
+        .section-title {
+            margin-bottom: 56px;
+        }
+    }
+
+    .about-row {
+        margin-bottom: 90px;
+        
+        .img-holder {
+            width: 50%;
+        }
+        
+        .text-holder {
+            width: 50%;
+            padding-left: 100px;
+        
+            .about-text {
+                margin-bottom: 45px;
+            }
+        }
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+
+            .text-holder {
+                padding: 0 100px 0 0;
+            }
+        }
+    
+    }
+    
+}

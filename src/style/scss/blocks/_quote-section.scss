@@ -1,0 +1,15 @@
+.quote-section {
+    padding: 84px 159px 110px 60px;
+    background-color: $brown;
+    color: $white;
+    border-radius: 16px;
+
+    .quote {
+        margin-bottom: 45px;
+    }
+
+    .author {
+        font-size: 26px;
+        font-style: normal;
+    }
+}

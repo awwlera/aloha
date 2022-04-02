@@ -26,7 +26,9 @@ h1,
 h2,
 p,
 ol,
-ul {
+ul,
+figure,
+blockquote {
     margin: 0;
     padding: 0;
 }
@@ -48,7 +50,7 @@ a {
 
 img {
     display: block;
-    width: 100%;
+    width:100%;
 }
 
 .container-1400 {
@@ -84,4 +86,10 @@ img {
     border-radius: 3px;
     padding: 11px 17px 10px;
     font-size: 20px;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+        background-color: $brown;
+        color: $white;
+    }
 }
