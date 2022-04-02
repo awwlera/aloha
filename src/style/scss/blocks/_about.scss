@@ -4,6 +4,10 @@
     .title-holder {
         margin-bottom: 90px;
 
+        @include breakpoint('sm') {
+            text-align: center;
+        }
+
         .section-title {
             margin-bottom: 56px;
         }
@@ -14,6 +18,11 @@
         
         .img-holder {
             width: 50%;
+
+            @include breakpoint('sm') {
+                width: 80%;
+                margin: 0 auto 20px;
+            }
         }
         
         .text-holder {
@@ -22,6 +31,12 @@
 
             @include breakpoint('md') {
                 padding-left: 40px;
+            }
+
+            @include breakpoint('sm') {
+                width: 100%;
+                text-align: center;
+                padding: 0;
             }
         
             .about-text {

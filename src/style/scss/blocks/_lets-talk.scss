@@ -1,6 +1,10 @@
 .lets-talk {
     padding: 84px 0 90px;
 
+    @include breakpoint('sm') {
+        text-align: center;
+    }
+
     .text-holder {
         margin-bottom: 56px;
     }

@@ -9,8 +9,13 @@
         @include breakpoint('lg') {
             padding: 80px 80px 80px 50px;
         }
+
         @include breakpoint('md') {
             padding: 40px;
+        }
+
+        @include breakpoint('sm') {
+            padding: 20px;
         }
     }
 

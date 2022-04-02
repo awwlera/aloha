@@ -21,6 +21,11 @@ body {
         font-size: 28px;
         line-height: 40px;
     }
+
+    @include breakpoint('xs') {
+        font-size: 22px;
+        line-height: 30px;
+    }
 }
 
 main {
@@ -100,6 +105,11 @@ img {
     @include breakpoint('md') {
         font-size: 50px;
         line-height: 70px;
+    }
+
+    @include breakpoint('xs') {
+        font-size: 36px;
+        line-height: 40px;
     }
 }
 

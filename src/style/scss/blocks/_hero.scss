@@ -5,6 +5,13 @@
         padding-top: 60px;
     }
 
+    .section-title {
+        @include breakpoint('xs') {
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+
     .title-holder {
         margin-bottom: 136px;
 

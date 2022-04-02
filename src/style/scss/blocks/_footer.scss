@@ -17,6 +17,10 @@
 
     .text-holder {
         margin-bottom: 83px;
+
+        @include breakpoint('md') {
+            margin: 0;
+        }
     }
 
     .footer-img {
